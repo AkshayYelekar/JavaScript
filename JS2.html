@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function printn()
+            {
+                var a=parseInt(document.getElementById("num").value);
+                var val=document.getElementById("msg").value;
+                // alert("hii");
+                for(let i=1;i<=a;i++)
+                {
+                    document.getElementById("mydiv").innerHTML+=val+"<br>"; 
+                    // document.getElementById("res").value+=val+" ";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form >
+            Enter an integer : <input type="text" name="num" id="num"> <br> <br>
+            Enter Message : <input type="text" name="msg" id="msg"> <br> <br>
+            <button type="button" name="but" id="but1" onclick="printn()">Print it </button>
+            <!-- result: <input type="text" name="res" id="res"> -->
+        </form>
+        <div id="mydiv">
+
+        </div>
+    </body>
+</html>
